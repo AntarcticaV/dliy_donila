@@ -93,6 +93,7 @@ namespace app_poprizonok
                     agents.Sort(Srt);
                     agentGrid.ItemsSource = agents.Skip(start * 10).Take(10).ToList();
                 }
+                full.Text = fullCount.ToString();
             }
             catch (Exception ex)
             {
